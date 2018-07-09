@@ -9,6 +9,7 @@
 import Foundation
 
 class QuadrantModel {
+    let fieldRowsCols = 3
     let fields = Observable([[FieldModel]]())
     var rotateCounterClockwiseListener: (() -> Void)?
     
@@ -25,9 +26,9 @@ class QuadrantModel {
     }
     
     init(handler: PentagoGameHandler, x: Int, y: Int) {
-        for fieldY in 0..<3 {
+        for fieldY in 0..<fieldRowsCols {
             var row = [FieldModel]()
-            for fieldX in 0..<3 {
+            for fieldX in 0..<fieldRowsCols {
                 let fieldPos = FieldPos(quadrantX: x, quadrantY: y, fieldX: fieldX, fieldY: fieldY)
                 row.append(FieldModel(handler: handler, pos: fieldPos))
             }

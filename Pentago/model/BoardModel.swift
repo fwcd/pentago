@@ -9,6 +9,8 @@
 import Foundation
 
 class BoardModel {
+    let quadrantRows = 2
+    let quadrantCols = 2
     let quadrants = Observable([[QuadrantModel]]())
     
     var isFull: Bool {
@@ -24,9 +26,9 @@ class BoardModel {
     }
     
     init(handler: PentagoGameHandler) {
-        for y in 0..<2 {
+        for y in 0..<quadrantRows {
             var row = [QuadrantModel]()
-            for x in 0..<2 {
+            for x in 0..<quadrantCols {
                 row.append(QuadrantModel(handler: handler, x: x, y: y))
             }
             quadrants.use { $0.append(row) }

@@ -14,14 +14,12 @@ class QuadrantView: ViewComponent {
     let bgColor = NSColor(calibratedRed: 0.956, green: 0.701, blue: 0.258, alpha: 1.0)
     var node: SKNode
     
-    init(model: QuadrantModel, bounds: CGRect) {
-        let shapeNode = SKShapeNode(rect: bounds)
+    init(model: QuadrantModel, center: CGPoint, size: CGSize) {
+        let shapeNode = SKShapeNode(rectOf: size)
         shapeNode.fillColor = bgColor
         shapeNode.strokeColor = .clear
+        shapeNode.position = center
         node = shapeNode
-        
-        let minX = Int(bounds.minX)
-        let minY = Int(bounds.minY)
         
         model.rotateClockwiseListener = {
             let rotateAngle = -CGFloat(Double.pi / 2)
@@ -38,22 +36,24 @@ class QuadrantView: ViewComponent {
             let yFields = fields.count
             let xFields = fields.first?.count ?? 0
             
-            let totalXPadding = Int(bounds.width) / self.totalPaddingDenom
-            let totalYPadding = Int(bounds.height) / self.totalPaddingDenom
+            let totalXPadding = Int(size.width) / self.totalPaddingDenom
+            let totalYPadding = Int(size.height) / self.totalPaddingDenom
             let fieldXPadding = totalXPadding / xFields
             let fieldYPadding = totalYPadding / yFields
-            let fieldWidth = (Int(bounds.width) - totalXPadding) / xFields
-            let fieldHeight = (Int(bounds.height) - totalYPadding) / yFields
+            let fieldWidth = (Int(size.width) - totalXPadding) / xFields
+            let fieldHeight = (Int(size.height) - totalYPadding) / yFields
+            let fieldSize = CGSize(width: fieldWidth, height: fieldHeight)
+            
+            let minX = -(Int(size.width) / 2) + (fieldWidth / 2)
+            let minY = -(Int(size.height) / 2) + (fieldHeight / 2)
             
             fields.compactMapWithIndex { row, y in
                 row.mapWithIndex { field, x in
-                    let fieldBounds = CGRect(
+                    let fieldCenter = CGPoint(
                         x: minX + (x * fieldWidth) + (x * fieldXPadding + (fieldXPadding / 2)),
-                        y: minY + (y * fieldHeight) + (y * fieldYPadding + (fieldYPadding / 2)),
-                        width: fieldWidth,
-                        height: fieldHeight
+                        y: minY + (y * fieldHeight) + (y * fieldYPadding + (fieldYPadding / 2))
                     )
-                    return FieldView(model: field, bounds: fieldBounds).node
+                    return FieldView(model: field, center: fieldCenter, size: fieldSize).node
                 }
             }.forEach { childNode in
                 shapeNode.addChild(childNode)

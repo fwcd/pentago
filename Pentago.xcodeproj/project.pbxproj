@@ -33,6 +33,7 @@
 		C74D23C320F3A2FB003F9C17 /* PentagoGameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */; };
 		C74D23C520F3A33E003F9C17 /* FieldPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C420F3A33E003F9C17 /* FieldPos.swift */; };
 		C74D23C720F3A93B003F9C17 /* MatrixUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */; };
+		C74D23C920F3BB82003F9C17 /* CGUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C820F3BB82003F9C17 /* CGUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoGameHandler.swift; sourceTree = "<group>"; };
 		C74D23C420F3A33E003F9C17 /* FieldPos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldPos.swift; sourceTree = "<group>"; };
 		C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixUtils.swift; sourceTree = "<group>"; };
+		C74D23C820F3BB82003F9C17 /* CGUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				C74D23B120F3796F003F9C17 /* Observable.swift */,
 				C74D23B320F37EF6003F9C17 /* SequenceUtils.swift */,
 				C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */,
+				C74D23C820F3BB82003F9C17 /* CGUtils.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				C74D23BA20F39E33003F9C17 /* ClickableSKShapeNode.swift in Sources */,
 				C74D237320F28D55003F9C17 /* AppViewController.swift in Sources */,
 				C74D23A420F29037003F9C17 /* PieceModel.swift in Sources */,
+				C74D23C920F3BB82003F9C17 /* CGUtils.swift in Sources */,
 				C74D23AF20F29263003F9C17 /* PieceView.swift in Sources */,
 				C74D23A220F28FFC003F9C17 /* FieldModel.swift in Sources */,
 				C74D23AB20F29233003F9C17 /* QuadrantView.swift in Sources */,

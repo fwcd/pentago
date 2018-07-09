@@ -12,8 +12,8 @@ import SpriteKit
 class PieceView: ViewComponent {
     var node: SKNode
     
-    init(model: PieceModel, bounds: CGRect) {
-        let shapeNode = SKShapeNode(ellipseIn: bounds)
+    init(model: PieceModel, size: CGSize) {
+        let shapeNode = SKShapeNode(ellipseOf: size)
         shapeNode.strokeColor = .clear
         
         switch model {

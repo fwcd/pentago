@@ -14,11 +14,12 @@ class FieldView: ViewComponent {
     let model: FieldModel
     let strokeColor = NSColor.black
     
-    init(model: FieldModel, bounds: CGRect) {
+    init(model: FieldModel, center: CGPoint, size: CGSize) {
         self.model = model
         
-        let shapeNode = ClickableSKShapeNode(ellipseIn: bounds)
+        let shapeNode = ClickableSKShapeNode(ellipseOf: size)
         node = shapeNode
+        shapeNode.position = center
         shapeNode.strokeColor = strokeColor
         shapeNode.isUserInteractionEnabled = true
         shapeNode.mouseDownHandler = { _ in
@@ -31,7 +32,7 @@ class FieldView: ViewComponent {
         model.piece.addAndFireListener { optionalPiece in
             if let piece = optionalPiece {
                 shapeNode.removeAllChildren()
-                shapeNode.addChild(PieceView(model: piece, bounds: bounds).node)
+                shapeNode.addChild(PieceView(model: piece, size: size).node)
             }
         }
     }

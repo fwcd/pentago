@@ -32,13 +32,9 @@ class AppViewController: NSViewController {
                 if let view = self.skView {
                     // Configure and add game board view
                     let boundLength: CGFloat = skView.frame.height
-                    let pentagoBounds = CGRect(
-                        x: -(boundLength / 2),
-                        y: -(boundLength / 2),
-                        width: boundLength,
-                        height: boundLength
-                    )
-                    sceneNode.addChild(PentagoView(model: pentagoModel, bounds: pentagoBounds).node)
+                    let center = CGPoint(x: 0, y: 0)
+                    let size = CGSize(width: boundLength, height: boundLength)
+                    sceneNode.addChild(PentagoView(model: pentagoModel, center: center, size: size).node)
                     
                     view.presentScene(sceneNode)
                     view.ignoresSiblingOrder = true

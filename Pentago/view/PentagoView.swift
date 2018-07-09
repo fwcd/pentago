@@ -12,7 +12,7 @@ import SpriteKit
 class PentagoView: ViewComponent {
     var node: SKNode
     
-    init(model: PentagoModel, bounds: CGRect) {
-        node = BoardView(model: model.board, bounds: bounds).node
+    init(model: PentagoModel, center: CGPoint, size: CGSize) {
+        node = BoardView(model: model.board, center: center, size: size).node
     }
 }

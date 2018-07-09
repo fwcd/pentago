@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C74D236B20F28D55003F9C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D236A20F28D55003F9C17 /* AppDelegate.swift */; };
+		C74D236D20F28D55003F9C17 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C74D236C20F28D55003F9C17 /* GameScene.sks */; };
+		C74D236F20F28D55003F9C17 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C74D236E20F28D55003F9C17 /* Actions.sks */; };
+		C74D237120F28D55003F9C17 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D237020F28D55003F9C17 /* GameScene.swift */; };
+		C74D237320F28D55003F9C17 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D237220F28D55003F9C17 /* AppViewController.swift */; };
+		C74D237520F28D56003F9C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74D237420F28D56003F9C17 /* Assets.xcassets */; };
+		C74D237820F28D56003F9C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74D237620F28D56003F9C17 /* Main.storyboard */; };
+		C74D238420F28D56003F9C17 /* PentagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D238320F28D56003F9C17 /* PentagoTests.swift */; };
+		C74D238F20F28D56003F9C17 /* PentagoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D238E20F28D56003F9C17 /* PentagoUITests.swift */; };
+		C74D239E20F28F01003F9C17 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D239D20F28F01003F9C17 /* BoardModel.swift */; };
+		C74D23A020F28FA5003F9C17 /* QuadrantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D239F20F28FA5003F9C17 /* QuadrantModel.swift */; };
+		C74D23A220F28FFC003F9C17 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A120F28FFC003F9C17 /* FieldModel.swift */; };
+		C74D23A420F29037003F9C17 /* PieceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A320F29037003F9C17 /* PieceModel.swift */; };
+		C74D23A720F2909E003F9C17 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A620F2909E003F9C17 /* BoardView.swift */; };
+		C74D23A920F29115003F9C17 /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A820F29115003F9C17 /* ViewComponent.swift */; };
+		C74D23AB20F29233003F9C17 /* QuadrantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23AA20F29233003F9C17 /* QuadrantView.swift */; };
+		C74D23AD20F29251003F9C17 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23AC20F29251003F9C17 /* FieldView.swift */; };
+		C74D23AF20F29263003F9C17 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23AE20F29263003F9C17 /* PieceView.swift */; };
+		C74D23B220F3796F003F9C17 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B120F3796F003F9C17 /* Observable.swift */; };
+		C74D23B420F37EF6003F9C17 /* SequenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B320F37EF6003F9C17 /* SequenceUtils.swift */; };
+		C74D23BA20F39E33003F9C17 /* ClickableSKShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B920F39E33003F9C17 /* ClickableSKShapeNode.swift */; };
+		C74D23BC20F3A056003F9C17 /* PentagoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23BB20F3A056003F9C17 /* PentagoModel.swift */; };
+		C74D23BE20F3A085003F9C17 /* PentagoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23BD20F3A085003F9C17 /* PentagoView.swift */; };
+		C74D23C320F3A2FB003F9C17 /* PentagoGameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */; };
+		C74D23C520F3A33E003F9C17 /* FieldPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C420F3A33E003F9C17 /* FieldPos.swift */; };
+		C74D23C720F3A93B003F9C17 /* MatrixUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C74D238020F28D56003F9C17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C74D235F20F28D55003F9C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C74D236620F28D55003F9C17;
+			remoteInfo = Pentago;
+		};
+		C74D238B20F28D56003F9C17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C74D235F20F28D55003F9C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C74D236620F28D55003F9C17;
+			remoteInfo = Pentago;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C74D236720F28D55003F9C17 /* Pentago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pentago.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74D236A20F28D55003F9C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C74D236C20F28D55003F9C17 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C74D236E20F28D55003F9C17 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		C74D237020F28D55003F9C17 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C74D237220F28D55003F9C17 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		C74D237420F28D56003F9C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C74D237720F28D56003F9C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C74D237920F28D56003F9C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74D237A20F28D56003F9C17 /* Pentago.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pentago.entitlements; sourceTree = "<group>"; };
+		C74D237F20F28D56003F9C17 /* PentagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74D238320F28D56003F9C17 /* PentagoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoTests.swift; sourceTree = "<group>"; };
+		C74D238520F28D56003F9C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74D238A20F28D56003F9C17 /* PentagoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentagoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74D238E20F28D56003F9C17 /* PentagoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoUITests.swift; sourceTree = "<group>"; };
+		C74D239020F28D56003F9C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74D239D20F28F01003F9C17 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		C74D239F20F28FA5003F9C17 /* QuadrantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantModel.swift; sourceTree = "<group>"; };
+		C74D23A120F28FFC003F9C17 /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
+		C74D23A320F29037003F9C17 /* PieceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceModel.swift; sourceTree = "<group>"; };
+		C74D23A620F2909E003F9C17 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		C74D23A820F29115003F9C17 /* ViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
+		C74D23AA20F29233003F9C17 /* QuadrantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantView.swift; sourceTree = "<group>"; };
+		C74D23AC20F29251003F9C17 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		C74D23AE20F29263003F9C17 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		C74D23B120F3796F003F9C17 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		C74D23B320F37EF6003F9C17 /* SequenceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceUtils.swift; sourceTree = "<group>"; };
+		C74D23B920F39E33003F9C17 /* ClickableSKShapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableSKShapeNode.swift; sourceTree = "<group>"; };
+		C74D23BB20F3A056003F9C17 /* PentagoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoModel.swift; sourceTree = "<group>"; };
+		C74D23BD20F3A085003F9C17 /* PentagoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoView.swift; sourceTree = "<group>"; };
+		C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoGameHandler.swift; sourceTree = "<group>"; };
+		C74D23C420F3A33E003F9C17 /* FieldPos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldPos.swift; sourceTree = "<group>"; };
+		C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C74D236420F28D55003F9C17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D237C20F28D56003F9C17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D238720F28D56003F9C17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C74D235E20F28D55003F9C17 = {
+			isa = PBXGroup;
+			children = (
+				C74D236920F28D55003F9C17 /* Pentago */,
+				C74D238220F28D56003F9C17 /* PentagoTests */,
+				C74D238D20F28D56003F9C17 /* PentagoUITests */,
+				C74D236820F28D55003F9C17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C74D236820F28D55003F9C17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C74D236720F28D55003F9C17 /* Pentago.app */,
+				C74D237F20F28D56003F9C17 /* PentagoTests.xctest */,
+				C74D238A20F28D56003F9C17 /* PentagoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C74D236920F28D55003F9C17 /* Pentago */ = {
+			isa = PBXGroup;
+			children = (
+				C74D23B020F37966003F9C17 /* utils */,
+				C74D23A520F29090003F9C17 /* view */,
+				C74D239C20F28EC2003F9C17 /* model */,
+				C74D236A20F28D55003F9C17 /* AppDelegate.swift */,
+				C74D236C20F28D55003F9C17 /* GameScene.sks */,
+				C74D236E20F28D55003F9C17 /* Actions.sks */,
+				C74D237020F28D55003F9C17 /* GameScene.swift */,
+				C74D237220F28D55003F9C17 /* AppViewController.swift */,
+				C74D237420F28D56003F9C17 /* Assets.xcassets */,
+				C74D237620F28D56003F9C17 /* Main.storyboard */,
+				C74D237920F28D56003F9C17 /* Info.plist */,
+				C74D237A20F28D56003F9C17 /* Pentago.entitlements */,
+			);
+			path = Pentago;
+			sourceTree = "<group>";
+		};
+		C74D238220F28D56003F9C17 /* PentagoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C74D238320F28D56003F9C17 /* PentagoTests.swift */,
+				C74D238520F28D56003F9C17 /* Info.plist */,
+			);
+			path = PentagoTests;
+			sourceTree = "<group>";
+		};
+		C74D238D20F28D56003F9C17 /* PentagoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C74D238E20F28D56003F9C17 /* PentagoUITests.swift */,
+				C74D239020F28D56003F9C17 /* Info.plist */,
+			);
+			path = PentagoUITests;
+			sourceTree = "<group>";
+		};
+		C74D239C20F28EC2003F9C17 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C74D23C420F3A33E003F9C17 /* FieldPos.swift */,
+				C74D23BB20F3A056003F9C17 /* PentagoModel.swift */,
+				C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */,
+				C74D239D20F28F01003F9C17 /* BoardModel.swift */,
+				C74D239F20F28FA5003F9C17 /* QuadrantModel.swift */,
+				C74D23A120F28FFC003F9C17 /* FieldModel.swift */,
+				C74D23A320F29037003F9C17 /* PieceModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C74D23A520F29090003F9C17 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C74D23A820F29115003F9C17 /* ViewComponent.swift */,
+				C74D23BD20F3A085003F9C17 /* PentagoView.swift */,
+				C74D23A620F2909E003F9C17 /* BoardView.swift */,
+				C74D23AA20F29233003F9C17 /* QuadrantView.swift */,
+				C74D23AC20F29251003F9C17 /* FieldView.swift */,
+				C74D23AE20F29263003F9C17 /* PieceView.swift */,
+				C74D23B920F39E33003F9C17 /* ClickableSKShapeNode.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C74D23B020F37966003F9C17 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C74D23B120F3796F003F9C17 /* Observable.swift */,
+				C74D23B320F37EF6003F9C17 /* SequenceUtils.swift */,
+				C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C74D236620F28D55003F9C17 /* Pentago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74D239320F28D56003F9C17 /* Build configuration list for PBXNativeTarget "Pentago" */;
+			buildPhases = (
+				C74D236320F28D55003F9C17 /* Sources */,
+				C74D236420F28D55003F9C17 /* Frameworks */,
+				C74D236520F28D55003F9C17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pentago;
+			productName = Pentago;
+			productReference = C74D236720F28D55003F9C17 /* Pentago.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C74D237E20F28D56003F9C17 /* PentagoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74D239620F28D56003F9C17 /* Build configuration list for PBXNativeTarget "PentagoTests" */;
+			buildPhases = (
+				C74D237B20F28D56003F9C17 /* Sources */,
+				C74D237C20F28D56003F9C17 /* Frameworks */,
+				C74D237D20F28D56003F9C17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C74D238120F28D56003F9C17 /* PBXTargetDependency */,
+			);
+			name = PentagoTests;
+			productName = PentagoTests;
+			productReference = C74D237F20F28D56003F9C17 /* PentagoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C74D238920F28D56003F9C17 /* PentagoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74D239920F28D56003F9C17 /* Build configuration list for PBXNativeTarget "PentagoUITests" */;
+			buildPhases = (
+				C74D238620F28D56003F9C17 /* Sources */,
+				C74D238720F28D56003F9C17 /* Frameworks */,
+				C74D238820F28D56003F9C17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C74D238C20F28D56003F9C17 /* PBXTargetDependency */,
+			);
+			name = PentagoUITests;
+			productName = PentagoUITests;
+			productReference = C74D238A20F28D56003F9C17 /* PentagoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C74D235F20F28D55003F9C17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Fredrik;
+				TargetAttributes = {
+					C74D236620F28D55003F9C17 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C74D237E20F28D56003F9C17 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C74D236620F28D55003F9C17;
+					};
+					C74D238920F28D56003F9C17 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C74D236620F28D55003F9C17;
+					};
+				};
+			};
+			buildConfigurationList = C74D236220F28D55003F9C17 /* Build configuration list for PBXProject "Pentago" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C74D235E20F28D55003F9C17;
+			productRefGroup = C74D236820F28D55003F9C17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C74D236620F28D55003F9C17 /* Pentago */,
+				C74D237E20F28D56003F9C17 /* PentagoTests */,
+				C74D238920F28D56003F9C17 /* PentagoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C74D236520F28D55003F9C17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74D236D20F28D55003F9C17 /* GameScene.sks in Resources */,
+				C74D237520F28D56003F9C17 /* Assets.xcassets in Resources */,
+				C74D236F20F28D55003F9C17 /* Actions.sks in Resources */,
+				C74D237820F28D56003F9C17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D237D20F28D56003F9C17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D238820F28D56003F9C17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C74D236320F28D55003F9C17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74D23B220F3796F003F9C17 /* Observable.swift in Sources */,
+				C74D239E20F28F01003F9C17 /* BoardModel.swift in Sources */,
+				C74D23B420F37EF6003F9C17 /* SequenceUtils.swift in Sources */,
+				C74D23BA20F39E33003F9C17 /* ClickableSKShapeNode.swift in Sources */,
+				C74D237320F28D55003F9C17 /* AppViewController.swift in Sources */,
+				C74D23A420F29037003F9C17 /* PieceModel.swift in Sources */,
+				C74D23AF20F29263003F9C17 /* PieceView.swift in Sources */,
+				C74D23A220F28FFC003F9C17 /* FieldModel.swift in Sources */,
+				C74D23AB20F29233003F9C17 /* QuadrantView.swift in Sources */,
+				C74D23C520F3A33E003F9C17 /* FieldPos.swift in Sources */,
+				C74D23C720F3A93B003F9C17 /* MatrixUtils.swift in Sources */,
+				C74D23C320F3A2FB003F9C17 /* PentagoGameHandler.swift in Sources */,
+				C74D237120F28D55003F9C17 /* GameScene.swift in Sources */,
+				C74D23AD20F29251003F9C17 /* FieldView.swift in Sources */,
+				C74D23A920F29115003F9C17 /* ViewComponent.swift in Sources */,
+				C74D23BC20F3A056003F9C17 /* PentagoModel.swift in Sources */,
+				C74D23A720F2909E003F9C17 /* BoardView.swift in Sources */,
+				C74D23A020F28FA5003F9C17 /* QuadrantModel.swift in Sources */,
+				C74D23BE20F3A085003F9C17 /* PentagoView.swift in Sources */,
+				C74D236B20F28D55003F9C17 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D237B20F28D56003F9C17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74D238420F28D56003F9C17 /* PentagoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D238620F28D56003F9C17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74D238F20F28D56003F9C17 /* PentagoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C74D238120F28D56003F9C17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C74D236620F28D55003F9C17 /* Pentago */;
+			targetProxy = C74D238020F28D56003F9C17 /* PBXContainerItemProxy */;
+		};
+		C74D238C20F28D56003F9C17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C74D236620F28D55003F9C17 /* Pentago */;
+			targetProxy = C74D238B20F28D56003F9C17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C74D237620F28D56003F9C17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C74D237720F28D56003F9C17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C74D239120F28D56003F9C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C74D239220F28D56003F9C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C74D239420F28D56003F9C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pentago/Pentago.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Pentago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fwcd.Pentago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C74D239520F28D56003F9C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pentago/Pentago.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Pentago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fwcd.Pentago;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C74D239720F28D56003F9C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PentagoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fwcd.PentagoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pentago.app/Contents/MacOS/Pentago";
+			};
+			name = Debug;
+		};
+		C74D239820F28D56003F9C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PentagoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fwcd.PentagoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pentago.app/Contents/MacOS/Pentago";
+			};
+			name = Release;
+		};
+		C74D239A20F28D56003F9C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PentagoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fwcd.PentagoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Pentago;
+			};
+			name = Debug;
+		};
+		C74D239B20F28D56003F9C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PentagoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fwcd.PentagoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Pentago;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C74D236220F28D55003F9C17 /* Build configuration list for PBXProject "Pentago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74D239120F28D56003F9C17 /* Debug */,
+				C74D239220F28D56003F9C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C74D239320F28D56003F9C17 /* Build configuration list for PBXNativeTarget "Pentago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74D239420F28D56003F9C17 /* Debug */,
+				C74D239520F28D56003F9C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C74D239620F28D56003F9C17 /* Build configuration list for PBXNativeTarget "PentagoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74D239720F28D56003F9C17 /* Debug */,
+				C74D239820F28D56003F9C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C74D239920F28D56003F9C17 /* Build configuration list for PBXNativeTarget "PentagoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74D239A20F28D56003F9C17 /* Debug */,
+				C74D239B20F28D56003F9C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C74D235F20F28D55003F9C17 /* Project object */;
+}

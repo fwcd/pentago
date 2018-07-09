@@ -8,7 +8,7 @@
 
 import Foundation
 
-func rotateCounterClockwise<T>(squareMatrix: inout [[T]]) {
+func rotateClockwise<T>(squareMatrix: inout [[T]]) {
     let len = squareMatrix.count
     for row in squareMatrix {
         if row.count != len {
@@ -29,7 +29,7 @@ func rotateCounterClockwise<T>(squareMatrix: inout [[T]]) {
     }
 }
 
-func rotateClockwise<T>(squareMatrix: inout [[T]]) {
+func rotateCounterClockwise<T>(squareMatrix: inout [[T]]) {
     let len = squareMatrix.count
     for row in squareMatrix {
         if row.count != len {

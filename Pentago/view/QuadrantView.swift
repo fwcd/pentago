@@ -21,8 +21,8 @@ class QuadrantView: ViewComponent {
         shapeNode.position = center
         node = shapeNode
         
-        model.rotateClockwiseListener = {
-            let rotateAngle = -CGFloat(Double.pi / 2)
+        model.rotateCounterClockwiseListener = {
+            let rotateAngle = CGFloat(Double.pi / 2)
             let rotateDuration = 1.0
             shapeNode.run(SKAction.sequence([
                 SKAction.rotate(byAngle: -rotateAngle, duration: 0),

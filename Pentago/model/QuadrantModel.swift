@@ -10,7 +10,7 @@ import Foundation
 
 class QuadrantModel {
     let fields = Observable([[FieldModel]]())
-    var rotateClockwiseListener: (() -> Void)?
+    var rotateCounterClockwiseListener: (() -> Void)?
     
     var isFull: Bool {
         let grid = fields.value
@@ -37,6 +37,6 @@ class QuadrantModel {
     
     func rotate() {
         fields.use { rotateClockwise(squareMatrix: &$0) }
-        rotateClockwiseListener?()
+        rotateCounterClockwiseListener?()
     }
 }

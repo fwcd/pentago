@@ -10,7 +10,6 @@ import XCTest
 @testable import Pentago
 
 class PentagoTests: XCTestCase {
-    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,16 +20,18 @@ class PentagoTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMatrixRotations() {
+        var a = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8]
+        ]
+        let b = [
+            [6, 3, 0],
+            [7, 4, 1],
+            [8, 5, 2]
+        ]
+        rotateClockwise(squareMatrix: &a)
+        XCTAssertEqual(a, b)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

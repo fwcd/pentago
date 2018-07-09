@@ -9,7 +9,7 @@
 import Foundation
 
 protocol PentagoGameHandler {
-    func whatToPlace(at fieldPos: FieldPos, previousPiece: PieceModel?) -> PieceModel?
+    func whatToPlace(at fieldPos: FieldPos, previousPiece: PieceColor?) -> PieceColor?
     
     func afterPlace(at fieldPos: FieldPos)
 }

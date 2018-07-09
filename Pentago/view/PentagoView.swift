@@ -14,5 +14,18 @@ class PentagoView: ViewComponent {
     
     init(model: PentagoModel, center: CGPoint, size: CGSize) {
         node = BoardView(model: model.board, center: center, size: size).node
+        
+        model.gameOverListener = { optionalWinner in
+            let alert = NSAlert()
+            
+            if let winner = optionalWinner {
+                alert.messageText = "Game Over. The winner is \(winner)!"
+            } else {
+                alert.messageText = "Game Over."
+            }
+            
+            alert.addButton(withTitle: "Ok")
+            alert.runModal()
+        }
     }
 }

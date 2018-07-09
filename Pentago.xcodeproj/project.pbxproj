@@ -19,7 +19,7 @@
 		C74D239E20F28F01003F9C17 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D239D20F28F01003F9C17 /* BoardModel.swift */; };
 		C74D23A020F28FA5003F9C17 /* QuadrantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D239F20F28FA5003F9C17 /* QuadrantModel.swift */; };
 		C74D23A220F28FFC003F9C17 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A120F28FFC003F9C17 /* FieldModel.swift */; };
-		C74D23A420F29037003F9C17 /* PieceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A320F29037003F9C17 /* PieceModel.swift */; };
+		C74D23A420F29037003F9C17 /* PieceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A320F29037003F9C17 /* PieceColor.swift */; };
 		C74D23A720F2909E003F9C17 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A620F2909E003F9C17 /* BoardView.swift */; };
 		C74D23A920F29115003F9C17 /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23A820F29115003F9C17 /* ViewComponent.swift */; };
 		C74D23AB20F29233003F9C17 /* QuadrantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23AA20F29233003F9C17 /* QuadrantView.swift */; };
@@ -73,7 +73,7 @@
 		C74D239D20F28F01003F9C17 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		C74D239F20F28FA5003F9C17 /* QuadrantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantModel.swift; sourceTree = "<group>"; };
 		C74D23A120F28FFC003F9C17 /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
-		C74D23A320F29037003F9C17 /* PieceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceModel.swift; sourceTree = "<group>"; };
+		C74D23A320F29037003F9C17 /* PieceColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceColor.swift; sourceTree = "<group>"; };
 		C74D23A620F2909E003F9C17 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		C74D23A820F29115003F9C17 /* ViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
 		C74D23AA20F29233003F9C17 /* QuadrantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantView.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				C74D239D20F28F01003F9C17 /* BoardModel.swift */,
 				C74D239F20F28FA5003F9C17 /* QuadrantModel.swift */,
 				C74D23A120F28FFC003F9C17 /* FieldModel.swift */,
-				C74D23A320F29037003F9C17 /* PieceModel.swift */,
+				C74D23A320F29037003F9C17 /* PieceColor.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 				C74D23B420F37EF6003F9C17 /* SequenceUtils.swift in Sources */,
 				C74D23BA20F39E33003F9C17 /* ClickableSKShapeNode.swift in Sources */,
 				C74D237320F28D55003F9C17 /* AppViewController.swift in Sources */,
-				C74D23A420F29037003F9C17 /* PieceModel.swift in Sources */,
+				C74D23A420F29037003F9C17 /* PieceColor.swift in Sources */,
 				C74D23C920F3BB82003F9C17 /* CGUtils.swift in Sources */,
 				C74D23AF20F29263003F9C17 /* PieceView.swift in Sources */,
 				C74D23A220F28FFC003F9C17 /* FieldModel.swift in Sources */,

@@ -9,9 +9,11 @@
 import Foundation
 
 class FieldModel {
-    var piece = Observable<PieceModel?>(nil)
+    var piece = Observable<PieceColor?>(nil)
     let gameHandler: PentagoGameHandler
     let pos: FieldPos
+    
+    var isEmpty: Bool { return piece.value == nil }
     
     init(handler: PentagoGameHandler, pos: FieldPos) {
         gameHandler = handler

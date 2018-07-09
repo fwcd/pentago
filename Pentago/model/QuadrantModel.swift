@@ -12,6 +12,18 @@ class QuadrantModel {
     let fields = Observable([[FieldModel]]())
     var rotateClockwiseListener: (() -> Void)?
     
+    var isFull: Bool {
+        let grid = fields.value
+        for row in grid {
+            for field in row {
+                if field.isEmpty {
+                    return false
+                }
+            }
+        }
+        return true
+    }
+    
     init(handler: PentagoGameHandler, x: Int, y: Int) {
         for fieldY in 0..<3 {
             var row = [FieldModel]()

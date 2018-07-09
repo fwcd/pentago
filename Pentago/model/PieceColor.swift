@@ -1,5 +1,5 @@
 //
-//  PieceModel.swift
+//  PieceColor
 //  Pentago
 //
 //  Created by Fredrik on 7/8/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum PieceModel {
+enum PieceColor {
     case black
     case white
 }

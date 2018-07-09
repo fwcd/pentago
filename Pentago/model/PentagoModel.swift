@@ -9,6 +9,7 @@
 import Foundation
 
 class PentagoModel: PentagoGameHandler {
+    let piecesInAChainRequired = 5
     var board: BoardModel! = nil
     var blackPlayerTurn = true
     var gameOverListener: ((PieceColor?) -> Void)?
@@ -32,6 +33,8 @@ class PentagoModel: PentagoGameHandler {
         
         if board.isFull {
             gameOver()
+        } else if let winner = board.findChain(ofLength: 5) {
+            win(winner)
         }
     }
     

@@ -10,16 +10,6 @@ import XCTest
 @testable import Pentago
 
 class PentagoTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testMatrixRotations() {
         var a = [
             [0, 1, 2],
@@ -33,5 +23,51 @@ class PentagoTests: XCTestCase {
         ]
         rotateClockwise(squareMatrix: &a)
         XCTAssertEqual(a, b)
+    }
+    
+    func testMatrixConcatenations() {
+        let a = [
+            [1, 2],
+            [3, 4],
+            [5, 6]
+        ]
+        let b = [
+            [8, 9],
+            [3, 2],
+            [0, 1]
+        ]
+        let horizontalConcat = [
+            [1, 2, 8, 9],
+            [3, 4, 3, 2],
+            [5, 6, 0, 1]
+        ]
+        let verticalConcat = [
+            [1, 2],
+            [3, 4],
+            [5, 6],
+            [8, 9],
+            [3, 2],
+            [0, 1]
+        ]
+        XCTAssertEqual(horizontalConcat, concatHorizontally(a, b))
+        XCTAssertEqual(verticalConcat, concatVertically(a, b))
+    }
+    
+    func testBoardModel() {
+        let board = PentagoModel().board
+        let quadrants = board?.quadrants.value
+        let fields = quadrants?.first?.first?.fields.value
+        
+        let quadrantsX = quadrants?.count ?? 0
+        let quadrantsY = quadrants?.first?.count ?? 0
+        let fieldsPerQuadrantX = fields?.count ?? 0
+        let fieldsPerQuadrantY = fields?.first?.count ?? 0
+        
+        let rows = quadrantsX * fieldsPerQuadrantX
+        let cols = quadrantsY * fieldsPerQuadrantY
+        
+        let allFields = board?.joinToFields()
+        XCTAssertEqual(rows, allFields?.count ?? 0)
+        XCTAssertEqual(cols, allFields?.first?.count ?? 0)
     }
 }

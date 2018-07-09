@@ -35,8 +35,14 @@ extension Sequence {
     }
 }
 
+extension Collection {
+    func reduce(_ accumulator: (Element, Element) -> Element) -> Element {
+        return dropFirst().reduce(first!, accumulator)
+    }
+}
+
 extension Array {
-    func optionalGet(_ index: Int) -> Element? {
+    func safeGet(_ index: Int) -> Element? {
         if index >= 0 && index < count {
             return self[index]
         } else {

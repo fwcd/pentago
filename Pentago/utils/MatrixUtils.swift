@@ -49,3 +49,31 @@ func rotateCounterClockwise<T>(squareMatrix: inout [[T]]) {
         }
     }
 }
+
+func concatHorizontally<T>(_ a: [[T]], _ b: [[T]]) -> [[T]] {
+    if a.count != b.count {
+        fatalError("Two matrices need to have the same height to be concatenated horizontally: \(a.count) vs \(b.count)")
+    }
+    
+    var result = [[T]]()
+    let len = a.count
+    
+    for y in 0..<len {
+        var row = [T]()
+        
+        row.append(contentsOf: a[y])
+        row.append(contentsOf: b[y])
+        result.append(row)
+    }
+    
+    return result
+}
+
+func concatVertically<T>(_ a: [[T]], _ b: [[T]]) -> [[T]] {
+    var result = [[T]]()
+    
+    result.append(contentsOf: a)
+    result.append(contentsOf: b)
+    
+    return result
+}

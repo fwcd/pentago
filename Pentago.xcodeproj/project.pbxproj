@@ -34,6 +34,7 @@
 		C74D23C520F3A33E003F9C17 /* FieldPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C420F3A33E003F9C17 /* FieldPos.swift */; };
 		C74D23C720F3A93B003F9C17 /* MatrixUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */; };
 		C74D23C920F3BB82003F9C17 /* CGUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C820F3BB82003F9C17 /* CGUtils.swift */; };
+		C74D23CB20F3E91B003F9C17 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = C74D23CA20F3E91B003F9C17 /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		C74D23C420F3A33E003F9C17 /* FieldPos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldPos.swift; sourceTree = "<group>"; };
 		C74D23C620F3A93B003F9C17 /* MatrixUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixUtils.swift; sourceTree = "<group>"; };
 		C74D23C820F3BB82003F9C17 /* CGUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGUtils.swift; sourceTree = "<group>"; };
+		C74D23CA20F3E91B003F9C17 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		C74D23CC20F3E92D003F9C17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 		C74D235E20F28D55003F9C17 = {
 			isa = PBXGroup;
 			children = (
+				C74D23CC20F3E92D003F9C17 /* README.md */,
+				C74D23CA20F3E91B003F9C17 /* screenshot.png */,
 				C74D236920F28D55003F9C17 /* Pentago */,
 				C74D238220F28D56003F9C17 /* PentagoTests */,
 				C74D238D20F28D56003F9C17 /* PentagoUITests */,
@@ -319,6 +324,7 @@
 				C74D237520F28D56003F9C17 /* Assets.xcassets in Resources */,
 				C74D236F20F28D55003F9C17 /* Actions.sks in Resources */,
 				C74D237820F28D56003F9C17 /* Main.storyboard in Resources */,
+				C74D23CB20F3E91B003F9C17 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

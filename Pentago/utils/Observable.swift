@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Observable<T> {
+class ReadOnlyObservable<T> {
     private var storedValue: T
     private var listeners = [(T) -> Void]()
-    var value: T {
+    fileprivate(set) var value: T {
         get { return storedValue }
         set {
             fireListeners(with: newValue)
@@ -23,7 +23,7 @@ class Observable<T> {
         storedValue = value
     }
     
-    func use(_ consumer: (inout T) -> Void) {
+    fileprivate func use(_ consumer: (inout T) -> Void) {
         consumer(&value)
         fireListeners(with: value)
     }
@@ -32,14 +32,33 @@ class Observable<T> {
         self.listeners.append(listener)
     }
     
-    func addAndFireListener(_ listener: @escaping (T) -> Void) {
+    fileprivate func addAndFireListener(_ listener: @escaping (T) -> Void) {
         addListener(listener)
         listener(value)
     }
     
-    func fireListeners(with newValue: T) {
+    fileprivate func fireListeners(with newValue: T) {
         for listener in listeners {
             listener(newValue)
         }
+    }
+}
+
+class Observable<T>: ReadOnlyObservable<T> {
+    override var value: T {
+        get { return super.value }
+        set { super.value = newValue }
+    }
+    
+    override func use(_ consumer: (inout T) -> Void) {
+        super.use(consumer)
+    }
+    
+    override func addAndFireListener(_ listener: @escaping (T) -> Void) {
+        super.addAndFireListener(listener)
+    }
+    
+    override func fireListeners(with newValue: T) {
+        super.fireListeners(with: newValue)
     }
 }

@@ -13,6 +13,8 @@ class PentagoModel: PentagoGameHandler {
     var board: BoardModel! = nil
     var blackPlayerTurn = true
     var gameOverListener: ((PieceColor?) -> Void)?
+    var selectableFields = Observable(false)
+    var selectableQuadrants = Observable(false)
     
     init() {
         board = BoardModel(handler: self)

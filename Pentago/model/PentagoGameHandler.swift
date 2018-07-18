@@ -9,6 +9,9 @@
 import Foundation
 
 protocol PentagoGameHandler {
+    var selectableFields: Observable<Bool> { get }
+    var selectableQuadrants: Observable<Bool> { get }
+    
     func whatToPlace(at fieldPos: FieldPos, previousPiece: PieceColor?) -> PieceColor?
     
     func afterPlace(at fieldPos: FieldPos)

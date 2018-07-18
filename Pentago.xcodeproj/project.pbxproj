@@ -27,7 +27,7 @@
 		C74D23AF20F29263003F9C17 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23AE20F29263003F9C17 /* PieceView.swift */; };
 		C74D23B220F3796F003F9C17 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B120F3796F003F9C17 /* Observable.swift */; };
 		C74D23B420F37EF6003F9C17 /* SequenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B320F37EF6003F9C17 /* SequenceUtils.swift */; };
-		C74D23BA20F39E33003F9C17 /* ClickableSKShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B920F39E33003F9C17 /* ClickableSKShapeNode.swift */; };
+		C74D23BA20F39E33003F9C17 /* InteractableSKShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23B920F39E33003F9C17 /* InteractableSKShapeNode.swift */; };
 		C74D23BC20F3A056003F9C17 /* PentagoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23BB20F3A056003F9C17 /* PentagoModel.swift */; };
 		C74D23BE20F3A085003F9C17 /* PentagoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23BD20F3A085003F9C17 /* PentagoView.swift */; };
 		C74D23C320F3A2FB003F9C17 /* PentagoGameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */; };
@@ -82,7 +82,7 @@
 		C74D23AE20F29263003F9C17 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 		C74D23B120F3796F003F9C17 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C74D23B320F37EF6003F9C17 /* SequenceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceUtils.swift; sourceTree = "<group>"; };
-		C74D23B920F39E33003F9C17 /* ClickableSKShapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableSKShapeNode.swift; sourceTree = "<group>"; };
+		C74D23B920F39E33003F9C17 /* InteractableSKShapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractableSKShapeNode.swift; sourceTree = "<group>"; };
 		C74D23BB20F3A056003F9C17 /* PentagoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoModel.swift; sourceTree = "<group>"; };
 		C74D23BD20F3A085003F9C17 /* PentagoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoView.swift; sourceTree = "<group>"; };
 		C74D23C220F3A2FB003F9C17 /* PentagoGameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagoGameHandler.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 				C74D23AA20F29233003F9C17 /* QuadrantView.swift */,
 				C74D23AC20F29251003F9C17 /* FieldView.swift */,
 				C74D23AE20F29263003F9C17 /* PieceView.swift */,
-				C74D23B920F39E33003F9C17 /* ClickableSKShapeNode.swift */,
+				C74D23B920F39E33003F9C17 /* InteractableSKShapeNode.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 				C74D23B220F3796F003F9C17 /* Observable.swift in Sources */,
 				C74D239E20F28F01003F9C17 /* BoardModel.swift in Sources */,
 				C74D23B420F37EF6003F9C17 /* SequenceUtils.swift in Sources */,
-				C74D23BA20F39E33003F9C17 /* ClickableSKShapeNode.swift in Sources */,
+				C74D23BA20F39E33003F9C17 /* InteractableSKShapeNode.swift in Sources */,
 				C74D237320F28D55003F9C17 /* AppViewController.swift in Sources */,
 				C74D23A420F29037003F9C17 /* PieceColor.swift in Sources */,
 				C74D23C920F3BB82003F9C17 /* CGUtils.swift in Sources */,

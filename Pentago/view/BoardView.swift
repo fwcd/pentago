@@ -40,12 +40,6 @@ class BoardView: ViewComponent {
             
             quadrants.compactMapWithIndex { row, y in
                 row.mapWithIndex { quadrant, x in
-                    /*let quadrantBounds = CGRect(
-                        x: minX + (x * quadrantWidth) + (x * quadrantXPadding + (quadrantXPadding / 2)),
-                        y: minY + (y * quadrantHeight) + (y * quadrantYPadding + (quadrantYPadding / 2)),
-                        width: quadrantWidth,
-                        height: quadrantHeight
-                    )*/
                     let quadrantPos = CGPoint(
                         x: minX + (x * quadrantWidth) + (x * quadrantXPadding + (quadrantXPadding / 2)),
                         y: minY + (y * quadrantHeight) + (y * quadrantYPadding + (quadrantYPadding / 2))

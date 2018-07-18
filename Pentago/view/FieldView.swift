@@ -17,7 +17,7 @@ class FieldView: ViewComponent {
     init(model: FieldModel, center: CGPoint, size: CGSize) {
         self.model = model
         
-        let shapeNode = ClickableSKShapeNode(ellipseOf: size)
+        let shapeNode = InteractableSKShapeNode(ellipseOf: size)
         node = shapeNode
         shapeNode.position = center
         shapeNode.strokeColor = strokeColor
